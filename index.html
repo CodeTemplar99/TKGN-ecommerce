@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>e-commerce demo</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="./Css/styled.css" rel="stylesheet" type="text/css">
+    <!-- <script defer src="./js/dummy.js"></script> -->
+    <!-- <script defer src="./js/jquery-3.4.1.min.js"></script> -->
+    <script defer src="./js/spine.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light p-0 ">
+            <div class="offset-8">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item p-0">
+                        <a class="nav-link" href="#">My Account<span class="ml-1"><i class="fa fa-user"></i></span>
+                            |</a>
+                    </li>
+                    <li class="nav-item p-0">
+                        <a class="nav-link" href="#">My Wishlist<span class="ml-1"><i class="fa fa-heart"></i></span>
+                            |</a>
+                    </li>
+                    <li class="nav-item p-0">
+                        <a class="nav-link" href="#">Checkout<span class="ml-1"><i
+                                    class="fa fa-check-square"></i></span> |</a>
+                    </li>
+
+                    <li class="nav-item p-0">
+                        <a class="nav-link">Login<span class="ml-1"><i class="fa fa-sign-in-alt"></i></span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- end of top nav -->
+
+        <div class="jumbotron nav  sticky-top mb-0 low-nav p-1 rounded-0 ">
+            <div class="jumbotron bg-transparent m-0 p-3 col-2 d-flex justify-content-center">
+                <img src="./img/logo-text.png" class="img-fluid image-responsive logo">
+            </div>
+            <div class="jumbotron bg-transparent m-0 col-7 p-0  d-flex justify-content-center align-items-center">
+
+                <form class="col-12 p-0">
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <div class="form-inline col-9 form-group justify-content-center">
+                            <select class="form-control col-3 rounded-0" id="exampleFormControlSelect1">
+                                <option>All Categories</option>
+                                <option>Cookies and Candies</option>
+                                <option>Drinks</option>
+                                <option>Electronics</option>
+                                <option>Home furniture</option>
+                                <option>Stationery</option>
+                            </select>
+
+                            <input class="form-control rounded-0 col-7 mr-sm-1" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="jumbotron bg-transparent m-0 p-0 col-2 d-flex justify-content-center align-items-center">
+                <div class="jumbotron col-12 cart-con p-1 m-0 d-flex justify-content-center align-items-center">
+                    <div class="mr-sm-2"><i class="fa fa-shopping-bag"></i></div>
+                    <div>
+                        <span>MY CART</span><br>
+                        <span>0</span><span>item(s): </span><span>$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of low-nav -->
+
+        <div class="container mb-4 p-0 d-flex justify-content-center">
+            <div class="jumbotron p-0 mr-sm-1 col-2 bg-transparent m-0 rounded-0">
+                <ul class="list-group p-0">
+                    <li class="list-group-item rounded-0 p-2 accent text-white"><span><i class="fa fa-bars"></i></span>
+                        CATEGORIES
+                    </li>
+                    <li class="list-group-item rounded-0 p-2 text-black-50"><span class="mr-sm-1"><i
+                                class="fa fa-taxi"></i></span>Cookies and Candies</li>
+
+                    <li class="list-group-item rounded-0 p-2 text-black-50"><span class="mr-sm-1"><i
+                                class="fa fa-glass-martini"></i></span>Drinks</li>
+
+                    <li class="list-group-item rounded-0 p-2 text-black-50"><span class="mr-sm-1"><i
+                                class="fa fa-plug"></i></span>Electronics</li>
+
+                    <li class="list-group-item rounded-0 p-2 text-black-50"><span class="mr-sm-1"><i
+                                class="fa fa-bed"></i></span>Home
+                        furniture</li>
+
+                    <li class="list-group-item rounded-0 p-2 text-black-50"><span class="mr-sm-1"><i
+                                class="fa fa-pencil-alt"></i></span>Stationery</li>
+                </ul>
+
+            </div>
+            <div class="jumbotron col-10 p-0 bg-transparent border m-0 rounded-0">
+                <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 bg-transparent mini-nav">
+
+                    <div>
+                        <ul class=" navbar-nav ml-sm-4 mr-auto">
+                            <li class="nav-item mr-sm-5 active">
+                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">COLLECTIONS</a>
+                            </li> -->
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">SHOP</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">BRANDS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">PAGES</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">MARKET</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <hr class="mb-2">
+
+                <div class="jumbotron m-0 mb-3 p-0 d-flex justify-content-center rounded-0 bg-transparent">
+                    <img src="./img/ads1.jpg" class="image-responsive img-fluid">
+                </div>
+
+                <div
+                    class="jumbotron bg-transparent rounded-0 mb-2 p-2 d-flex justify-content-between align-items-center">
+                    <div
+                        class="jumbotron bg-transparent shadow-sm rounded-0 border quick-tell-cons m-0 p-2 py-4 d-flex flex-column align-items-center justify-content-center">
+                        <i class=" fa fa-shield-alt"></i>
+                        <P class="text-center m-0">SAFE SHOPPING</P>
+                        <span class="text-center text-muted">Safe Shopping guarantee.</span>
+                    </div>
+                    <div
+                        class="jumbotron bg-transparent shadow-sm rounded-0 border quick-tell-cons m-0 p-2 py-4 d-flex flex-column align-items-center justify-content-center">
+                        <i class=" fa fa-truck"></i>
+                        <P class="text-center m-0">EXPRESS SHIPPING</P>
+                        <span class="text-center text-muted">Frictionless shipping</span>
+                    </div>
+                    <div
+                        class="jumbotron bg-transparent shadow-sm rounded-0 border quick-tell-cons m-0 p-2 py-4 d-flex flex-column align-items-center justify-content-center">
+                        <i class=" fa fa-cube"></i>
+                        <P class="text-center m-0">EXCELLENT DELIVERY</P>
+                        <span class="text-center text-muted">Round the clock delivery</span>
+                    </div>
+
+                </div>
+
+                <div class="jumbotron bg-transparent rounded-0 p-2 d-flex justify-content-between">
+                    <div class="jumbotron bg-transparent rounded-0 border col-8 m-0 p-0">
+                        <div
+                            class="jumbotron bg-transparent d-flex flex-column align-items-center justify-content-center rounded-0 p-0">
+                            <div
+                                class="jumbotron d-flex p-2 m-0 col-12 justify-content-between align-items-center rounded-0 border">
+                                <div>
+                                    <span class="lead">Latest Deals</span>
+                                </div>
+                                <div>
+                                    <span><button class="btn btn-outline-warning">&lt;</button></span> <span><button
+                                            class="btn btn-outline-warning">&gt;
+                                        </button></span>
+                                </div>
+                            </div>
+
+                            <div class="jumbotron bg-transparent col-12 p-2 rounded-0 d-flex justify-content-start">
+                                <div class="jumbotron bg-warning m-0 mr-sm-3  p-1 deal-img-con rounded-0">
+                                    <img src="./img/toster.png" class="image-responsive img-fluid">
+                                </div>
+
+                                <div class="jumbotron bg-transparent m-0 col-6 p-2">
+                                    <p class="lead mb-sm-2 font-weight-bold">PRODUCT NAME</p>
+                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                        cupiditate quae quibusdam commodi vel fugiat? Quam quisquam eligendi reiciendis
+                                        et?</span>
+                                    <p class="lead text-danger mt-4 font-weight-bold">N300.00 <span
+                                            class="small"><strike>N450</strike></span></p>
+                                    <div
+                                        class="jumbotron bg-transparent p-0 m-0 rounded-0 d-flex justify-content-start">
+                                        <div class="jumbotron border p-2 m-0 mr-sm-2 add-cart"><span><i
+                                                    class="fa fa-shopping-bag"></i> Add To Cart</span></div>
+                                        <div
+                                            class="jumbotron border p-1 col-2 m-0 d-flex justify-content-center align-items-center fav-it">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="jumbotron bg-transparent rounded-0 border col-4 m-0 p-1 d-flex  align-items-center justify-content-center">
+                        <img src="./img/trimmer.png" class="image-responsive img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mb-4 p-0 d-flex justify-content-center">
+            <div class="jumbotron p-0 mr-sm-1 col-2 bg-transparent m-0 rounded-0">
+                <ul class="list-group p-0">
+                    <li class="list-group-item rounded-0 p-2 accent text-white"><span><i
+                                class="fa fa-taxi"></i></span>Cookies and Candies</li>
+                </ul>
+
+            </div>
+            <div class="jumbotron col-10 p-0 bg-transparent border m-0 rounded-0">
+
+                <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 bg-transparent mini-nav">
+
+                    <div>
+                        <ul class=" navbar-nav ml-sm-4 mr-auto">
+                            <li class="nav-item mr-sm-5 active">
+                                <a class="nav-link" href="#">TOP SELLING <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-item mr-sm-5">
+                                    <a class="nav-link" href="#">COLLECTIONS</a>
+                                </li> -->
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">NEW ARRIVALS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">ALL ITEMS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">FEATURED</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- <hr class="mb-2"> -->
+                <div
+                    class="jumbotron bg-transparent rounded-0 mb-2 p-2 d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/download (1).webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/download (1).webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/download.webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/download (1).webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/download.webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/download (1).webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="jumbotron m-0 mb-3 p-0 d-flex justify-content-center rounded-0 bg-transparent">
+                    <img src="./img/ads1.jpg" class="image-responsive img-fluid">
+                </div> -->
+            </div>
+        </div>
+        <div class="container mb-4 p-0 d-flex justify-content-center">
+            <div class="jumbotron p-0 mr-sm-1 col-2 bg-transparent m-0 rounded-0">
+                <ul class="list-group p-0">
+                    <li class="list-group-item rounded-0 p-2 accent text-white"><span><i
+                                class="fa fa-glass-martini"></i></span>Drinks</li>
+                </ul>
+
+            </div>
+            <div class="jumbotron col-10 p-0 bg-transparent border m-0 rounded-0">
+
+                <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 bg-transparent mini-nav">
+
+                    <div>
+                        <ul class=" navbar-nav ml-sm-4 mr-auto">
+                            <li class="nav-item mr-sm-5 active">
+                                <a class="nav-link" href="#">TOP SELLING <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-item mr-sm-5">
+                                            <a class="nav-link" href="#">COLLECTIONS</a>
+                                        </li> -->
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">NEW ARRIVALS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">ALL ITEMS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">FEATURED</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- <hr class="mb-2"> -->
+                <div
+                    class="jumbotron bg-transparent rounded-0 mb-2 p-2 d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/2750-thickbox_default-FLEMISH-COCKTAIL-BLUE-SPARKLING-DRINK-NON-ALCOHOLIC.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/orijin_can_zero.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/sprite-soft-drink.3.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/orijin_can_zero.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/sprite-soft-drink.3.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/orijin_can_zero.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="jumbotron m-0 mb-3 p-0 d-flex justify-content-center rounded-0 bg-transparent">
+                            <img src="./img/ads1.jpg" class="image-responsive img-fluid">
+                        </div> -->
+            </div>
+        </div>
+
+        <div class="container mb-4 p-0 d-flex justify-content-center">
+            <div class="jumbotron p-0 mr-sm-1 col-2 bg-transparent m-0 rounded-0">
+                <ul class="list-group p-0">
+                    <li class="list-group-item rounded-0 p-2 accent text-white"><span><i class="fa fa-plug"></i>
+                        </span>Electronics</li>
+                </ul>
+
+            </div>
+            <div class="jumbotron col-10 p-0 bg-transparent border m-0 rounded-0">
+
+                <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 bg-transparent mini-nav">
+
+                    <div>
+                        <ul class=" navbar-nav ml-sm-4 mr-auto">
+                            <li class="nav-item mr-sm-5 active">
+                                <a class="nav-link" href="#">TOP SELLING <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-item mr-sm-5">
+                                                        <a class="nav-link" href="#">COLLECTIONS</a>
+                                                    </li> -->
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">NEW ARRIVALS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">ALL ITEMS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">FEATURED</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- <hr class="mb-2"> -->
+                <div
+                    class="jumbotron bg-transparent rounded-0 mb-2 p-2 d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/32inch-image_1.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/A4GDK27VMnz6LtFDy9yzk-650-80.jpg.webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/mi_gaming_laptop_2019_image_1565003115644.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/A4GDK27VMnz6LtFDy9yzk-650-80.jpg.webp" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/mi_gaming_laptop_2019_image_1565003115644.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/mi_gaming_laptop_2019_image_1565003115644.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="jumbotron m-0 mb-3 p-0 d-flex justify-content-center rounded-0 bg-transparent">
+                                        <img src="./img/ads1.jpg" class="image-responsive img-fluid">
+                                    </div> -->
+            </div>
+        </div>
+
+        <div class="container mb-4 p-0 d-flex justify-content-center">
+            <div class="jumbotron p-0 mr-sm-1 col-2 bg-transparent m-0 rounded-0">
+                <ul class="list-group p-0">
+                    <li class="list-group-item rounded-0 p-2 accent text-white"><span><i class="fa fa-bed"></i>
+                        </span>Home furniture</li>
+                </ul>
+
+            </div>
+            <div class="jumbotron col-10 p-0 bg-transparent border m-0 rounded-0">
+
+                <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 bg-transparent mini-nav">
+
+                    <div>
+                        <ul class=" navbar-nav ml-sm-4 mr-auto">
+                            <li class="nav-item mr-sm-5 active">
+                                <a class="nav-link" href="#">TOP SELLING <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-item mr-sm-5">
+                                                                    <a class="nav-link" href="#">COLLECTIONS</a>
+                                                                </li> -->
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">NEW ARRIVALS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">ALL ITEMS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">FEATURED</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- <hr class="mb-2"> -->
+                <div
+                    class="jumbotron bg-transparent rounded-0 mb-2 p-2 d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/homefurniture_banner.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/house-design-furniture-new-home-interesting_furniture-arrangement.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/f1jz6jpff9d.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/creative-furniture-designs-26.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/f1jz6jpff9d.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/f1jz6jpff9d.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="jumbotron m-0 mb-3 p-0 d-flex justify-content-center rounded-0 bg-transparent">
+                                                    <img src="./img/ads1.jpg" class="image-responsive img-fluid">
+                                                </div> -->
+            </div>
+        </div>
+
+        <div class="container mb-4 p-0 d-flex justify-content-center">
+            <div class="jumbotron p-0 mr-sm-1 col-2 bg-transparent m-0 rounded-0">
+                <ul class="list-group p-0">
+                    <li class="list-group-item rounded-0 p-2 accent text-white"><span><i class="fa fa-pencil-alt"></i>
+                        </span>Stationery</li>
+                </ul>
+
+            </div>
+            <div class="jumbotron col-10 p-0 bg-transparent border m-0 rounded-0">
+
+                <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 bg-transparent mini-nav">
+
+                    <div>
+                        <ul class=" navbar-nav ml-sm-4 mr-auto">
+                            <li class="nav-item mr-sm-5 active">
+                                <a class="nav-link" href="#">TOP SELLING <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-item mr-sm-5">
+                                                                                        <a class="nav-link" href="#">COLLECTIONS</a>
+                                                                                    </li> -->
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">NEW ARRIVALS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">ALL ITEMS</a>
+                            </li>
+                            <li class="nav-item mr-sm-5">
+                                <a class="nav-link" href="#">FEATURED</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- <hr class="mb-2"> -->
+                <div
+                    class="jumbotron bg-transparent rounded-0 mb-2 p-2 d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/black-lead-pencil-500x500.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/1485.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/111849_Founderie_AK47_inSitu__10117.1501636844.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/4b-drawing-pencil-03.jpg" class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/111849_Founderie_AK47_inSitu__10117.1501636844.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                    <div class="jumbotron product-con bg-transparent border p-0 shadow-sm">
+                        <div class="jumbotron bg-transparent product-img-con p-4 border rounded-0 m-0">
+                            <img src="./img/111849_Founderie_AK47_inSitu__10117.1501636844.jpg"
+                                class="image-responsive img-fluid">
+                        </div>
+                        <div
+                            class="jumbotron bg-transparent m-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                            <p class="mb-sm-1">PRODUCT NAME</p>
+                            <p class="lead text-danger font-weight-bold">N300.00 <span
+                                    class="small"><strike>N450</strike></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="jumbotron m-0 mb-3 p-0 d-flex justify-content-center rounded-0 bg-transparent">
+                                                                        <img src="./img/ads1.jpg" class="image-responsive img-fluid">
+                                                                    </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron rounded-0 mt-0 p-4 mb-0 d-flex accent justify-content-lg-around brief-super-con">
+        <div class="col-lg-3 brief-cons">
+            <p class="mb-0"><a class="navbar-brand font-weight-bolder" href="#">JUSTRITE</a></p>
+            <p class="mb-4 mt-2 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quaerat,
+                provident
+                temporibus, velit nobis aliquam mollitia labore quos unde quibusdam, corporis voluptates rem molestiae
+                dolores quis culpa est sit praesentium? Est dolore eligendi provident eveniet quisquam sequi labore,
+                natus sapiente.</p>
+
+
+        </div>
+
+        <div class="col-lg-2 brief-cons">
+            <p class="p-1 py-0 text-white">COMPANY</p>
+            <div class="list-group">
+
+                <a href="#" class="list-group-item bg-transparent border-0 p-1">About COMPANY</a>
+                <a href="#" class="list-group-item bg-transparent border-0 p-1">Contact us</a>
+                <a href="#" class="list-group-item bg-transparent border-0 p-1">Terms of service</a>
+                <a href="#" class="list-group-item bg-transparent border-0 p-1">Privacy Policies</a>
+
+
+            </div>
+        </div>
+
+        <div class="col-lg-2 brief-cons">
+            <p class="text-white">ADDRESS, LAG</p>
+            <p class="text-white">
+                150 XXXXXXX Road, Onipanu,
+                Lagos, Nigeria
+
+                234-090123456789
+
+                sales@Company.com</p>
+
+
+        </div>
+        <div class="col-lg-2 brief-cons">
+            <p class="text-white">ADDRESS, LAG</p>
+            <p class="text-white">150 XXXXXXX Road, Onipanu,
+                Lagos, Nigeria
+
+                234-090123456789
+
+                sales@Company.com</p>
+
+
+        </div>
+    </div>
+
+    <div class="jumbotron bg-transparent p-3 d-flex justify-content-center align-items-center col-lg-12 m-0">
+        <center>
+            <div class="hrr-5 hidden-xs"></div>
+        </center>
+
+        <p class="text-center small m-0">©2020 Justrite<br>
+            Justrite is a registered trademark of Justrite.
+        </p>
+
+    </div>
+    <div class="jumbotron bg-transparent col-12 p-0 m-0 d-flex justify-content-end align-items-center">
+        <p class="text-center small font-weight-bold m-2">Powered byTekagon inc.
+        </p>
+    </div>
+</body>
+
+</html>

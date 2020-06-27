@@ -1,0 +1,96 @@
+/* root{
+--primary-color: linear-gradient(to left, #302b48, #264A9D);
+} */
+
+body{
+font-size: 100%;
+width: 100%;
+overflow-x: hidden;
+padding-bottom: 10px;
+}
+
+.nav{
+    background: #2e2e6e;
+}
+/* .nav-link{
+    color: white !important;
+} */
+
+.low-nav{
+    /* background: #1b1b46; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.form-control{
+    height: 45px;
+}
+
+.cart-con{
+    background: #e7d10a;
+}
+.nav .btn{
+    background: #e7d10a;
+}
+
+.nav .fa-shopping-bag{
+    font-size: 150%;
+}
+
+.active{
+    border-bottom: 2px solid red;
+}
+.accent{
+    background: #2e2e6e;
+}
+
+.mini-nav li:hover a{
+    color: red !important;
+}
+.quick-tell-cons{
+    width: 30%;
+}
+
+.quick-tell-cons .fa{
+    font-size: 130%;
+    color: #2e2e6e;
+}
+
+.deal-img-con{
+    height: 300px;
+}
+.deal-img-con img{
+    height: 100%;
+}
+
+
+.add-cart, .fav-it{
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background-color: #e7d10a;
+}
+         
+.fav-it:hover{
+                color: red !important;
+            }
+
+.product-con{
+    width: 28%;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.product-img-con{
+    height: 180px;
+    width: 100%;
+}
+
+.product-con:hover{
+    border: 1px solid red !important;
+}
+.product-img-con img{
+    height: 100%;
+    width: 100%;
+}
